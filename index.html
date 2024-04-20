@@ -1,43 +1,22 @@
+<!-- Salve este código como index.html -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Legal</title>
-    <style>
-        /* Estilos CSS aqui */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        /* Adicione mais estilos conforme necessário */
-    </style>
+<meta charset="UTF-8">
+<title>E-mail Temporário</title>
+<style>
+    body { font-family: Arial, sans-serif; }
+    .container { width: 300px; margin: auto; }
+    #email { margin-bottom: 15px; }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Meu Site Legal</h1>
-        <p>Seja bem-vindo!</p>
-    </header>
-    <div class="container">
-        <h2>Sobre Nós</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec justo ac nunc tincidunt aliquet.</p>
-        <!-- Adicione mais conteúdo aqui -->
-    </div>
-    <footer>
-        <p>© 2024 Meu Site Legal</p>
-    </footer>
+<div class="container">
+    <h2>Criar E-mail Temporário</h2>
+    <form action="criar_email.php" method="post">
+        <input type="text" id="email" name="email" placeholder="Escolha um nome de usuário" required>
+        <input type="submit" value="Criar E-mail">
+    </form>
+</div>
 </body>
 </html>
